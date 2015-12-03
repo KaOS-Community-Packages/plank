@@ -9,10 +9,16 @@ Needed form KCP:
 
 [bamf](../../../bamf)
 
+[libdbusmenu-gtk3](../../../libdbusmenu-gtk3)
+
 [libgee](../../../libgee)
 
 ```
 kcp -i --asdeps bamf
+```
+
+```
+kcp -i --asdeps libdbusmenu-gtk3
 ```
 
 ```
