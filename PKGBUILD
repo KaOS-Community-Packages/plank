@@ -1,15 +1,15 @@
 pkgname=plank
-pkgver=0.7.1
+pkgver=0.10.1
 pkgrel=1
 pkgdesc='Elegant, simple, clean dock'
 arch=('x86_64')
 url='https://launchpad.net/plank'
 license=('GPL3')
 depends=('bamf' 'libdbusmenu-gtk3' 'libgee')
-makedepends=('gnome-common' 'intltool' 'vala')
+makedepends=('intltool' 'vala')
 install="${pkgname}.install"
 source=("https://launchpad.net/${pkgname}/1.0/${pkgver}/+download/${pkgname}-${pkgver}.tar.xz")
-sha256sums=('fa51b66a4a84d14b1fc605d38369be392cb09cf4263573f6cf74423d0bad1da5')
+sha256sums=('04cf4205fb7fce035bf537395fbfc3cf79aea9692fb4186345fe6a06ce2ebf36')
 
 build() {
   cd ${pkgname}-${pkgver}
