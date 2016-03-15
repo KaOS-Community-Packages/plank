@@ -1,5 +1,5 @@
 pkgname=plank
-pkgver=0.10.1
+pkgver=0.11.0
 pkgrel=1
 pkgdesc='Elegant, simple, clean dock'
 arch=('x86_64')
@@ -8,8 +8,10 @@ license=('GPL3')
 depends=('bamf' 'libdbusmenu-gtk3' 'libgee')
 makedepends=('intltool' 'vala')
 install="${pkgname}.install"
-source=("https://launchpad.net/${pkgname}/1.0/${pkgver}/+download/${pkgname}-${pkgver}.tar.xz")
-sha256sums=('04cf4205fb7fce035bf537395fbfc3cf79aea9692fb4186345fe6a06ce2ebf36')
+source=("https://launchpad.net/${pkgname}/1.0/${pkgver}/+download/${pkgname}-${pkgver}.tar.xz"
+        "planksettings.desktop")
+md5sums=('5ae6d28b3f4b962611299e08af013111'
+         '63c93d68e8f86c08856355d070b5c11f')
 
 build() {
   cd ${pkgname}-${pkgver}
@@ -20,7 +22,7 @@ build() {
 
 package() {
   cd ${pkgname}-${pkgver}
-
   make DESTDIR="${pkgdir}" install
+  install -m644 "${srcdir}/planksettings.desktop" \
+  "${pkgdir}/usr/share/applications/"
 }
-

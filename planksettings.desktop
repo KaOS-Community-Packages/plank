@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Plank Settings
+Name[es]=Preferencias de Plank
+GenericName=Dock preferences
+Comment=
+Categories=Utility;Settings;
+Type=Application
+Exec=plank --preferences
+Icon=plank
+Terminal=false
+NoDisplay=false
