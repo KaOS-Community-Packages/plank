@@ -7,6 +7,7 @@ url='https://launchpad.net/plank'
 license=('GPL3')
 depends=('bamf' 'libdbusmenu-gtk3' 'libgee')
 makedepends=('intltool' 'vala')
+optdepends=('midna-gtk-icon-theme: gtk icon theme pack for midna)
 install="${pkgname}.install"
 source=("https://launchpad.net/${pkgname}/1.0/${pkgver}/+download/${pkgname}-${pkgver}.tar.xz"
         "git+https://github.com/Gabrielgtx/plank-extra-themes.git"
