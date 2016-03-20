@@ -14,13 +14,13 @@ Needed form KCP:
 [libgee](../../../libgee)
 
 ```
-kcp -i --asdeps bamf
+kcp -di bamf
 ```
 
 ```
-kcp -i --asdeps libdbusmenu-gtk3
+kcp -di libdbusmenu-gtk3
 ```
 
 ```
-kcp -i --asdeps libgee
+kcp -di libgee
 ```
