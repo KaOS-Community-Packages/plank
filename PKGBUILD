@@ -1,19 +1,19 @@
 pkgname=plank
-pkgver=0.11.0
-pkgrel=2
+pkgver=0.11.1
+pkgrel=1
 pkgdesc='Elegant, simple, clean dock'
 arch=('x86_64')
 url='https://launchpad.net/plank'
 license=('GPL3')
 depends=('bamf' 'libdbusmenu-gtk3' 'libgee')
 makedepends=('intltool' 'vala')
-optdepends=('midna-gtk-icon-theme: support GTK themes for Midna icons'
+optdepends=('midna-theme: support GTK themes icons'
             'breeze-gtk: enhanced management for themes gtk 2 and 3')
 install="${pkgname}.install"
 source=("https://launchpad.net/${pkgname}/1.0/${pkgver}/+download/${pkgname}-${pkgver}.tar.xz"
         "git+https://github.com/Gabrielgtx/plank-extra-themes.git"
         "planksettings.desktop")
-md5sums=('5ae6d28b3f4b962611299e08af013111'
+md5sums=('469c94df34e235b0e28f86c755666d6f'
          'SKIP'
          '63c93d68e8f86c08856355d070b5c11f')
 
