@@ -8,7 +8,7 @@ license=('GPL3')
 depends=('bamf' 'libdbusmenu-gtk3' 'libgee')
 makedepends=('intltool' 'vala')
 optdepends=('midna-themes: support GTK themes icons'
-            'breeze-gtk: enhanced management for themes gtk 2 and 3')
+            'gtk-theme-arc-git: enhanced management for themes gtk 2 and 3 with support transparent elements')
 install="${pkgname}.install"
 source=("https://launchpad.net/${pkgname}/1.0/${pkgver}/+download/${pkgname}-${pkgver}.tar.xz"
         "git+https://github.com/Gabrielgtx/plank-extra-themes.git"
