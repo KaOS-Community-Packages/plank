@@ -1,5 +1,5 @@
 pkgname=plank
-pkgver=0.11.1
+pkgver=0.11.2
 pkgrel=1
 pkgdesc='Elegant, simple, clean dock'
 arch=('x86_64')
@@ -13,7 +13,7 @@ install="${pkgname}.install"
 source=("https://launchpad.net/${pkgname}/1.0/${pkgver}/+download/${pkgname}-${pkgver}.tar.xz"
         "git+https://github.com/Gabrielgtx/plank-extra-themes.git"
         "planksettings.desktop")
-md5sums=('469c94df34e235b0e28f86c755666d6f'
+md5sums=('d5cbc1fbbb98ea701d4de5f83add939c'
          'SKIP'
          '63c93d68e8f86c08856355d070b5c11f')
 
